@@ -5,13 +5,13 @@ const { Category, Product } = require('../../models');
 
 router.get('/', (req, res) => {
   // find all categories
-  Category.findAll().then((categoryData)=>{
+  Category.findAll({
+    include: [Product]
+  }).then((categoryData)=>{
     res.json(categoryData)
   })
   // be sure to include its associated Products
-  Product.findAll().then((productData)=>{
-    res.json(productData)
-  })
+
   // res.send(er)
 });
 
