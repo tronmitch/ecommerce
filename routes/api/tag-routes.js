@@ -6,7 +6,11 @@ const { tableName } = require('../../models/Product');
 
 router.get('/', (req, res) => {
   // find all tags
-  Tag.findAll().then((tagData)=>{
+  Tag.findAll({include: [{
+    model: Product,
+    as: 'products'
+}]
+}).then((tagData)=>{
     res.json(tagData)
   })
   // be sure to include its associated Product data
