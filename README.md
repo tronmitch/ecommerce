@@ -5,7 +5,7 @@ This is a template for CRUD applications.
 
  ## Table of contents
  * [Installation](#installation)
- * [Usage](#usage)
+ * [Demo](#demo)
  * [Contributions](#contributions)
  * [License](#license)
  * [Test](#test)
@@ -13,7 +13,8 @@ This is a template for CRUD applications.
 ## Installation
 npm install, npm run init to create the database, npm run seed to populate tables
 
-## Usage
+## Demo
+[Video](https://cds-catalog-static.s3-us-west-2.amazonaws.com/domains/test/theron/ecommerce.mp4)
 
 
 ## Contributions
